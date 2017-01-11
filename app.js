@@ -40,7 +40,6 @@ Shop.prototype.showOnPage = function() {
   var tableEl = document.getElementById('cookie-table');
   var trEl = document.createElement('tr');
   for(var i = 1; i < hours.length; i++){
-    var rowData = hours[i];
     var thEl = document.createElement('th');
     thEl.textContent = hours[i];
     trEl.appendChild(thEl);
