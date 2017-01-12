@@ -1,0 +1,53 @@
+* {
+  background-color: #f2efc7;
+}
+
+h1 {
+  font-family: 'bungee shade';
+  color: salmon;
+  float: right;
+  font-size: 44px;
+  float: left;
+  width:25em;
+}
+
+h2 {
+  font-family: 'bungee shade';
+  color: salmon;
+}
+
+.salmon {
+  width: 32em;
+  float: left;
+}
+
+.recipe {
+  font-family: 'bungee shade';
+  color: salmon;
+  text-decoration: underline;
+  font-size: 26px;
+}
+
+.cookiepars {
+  font-family: serif;;
+  color: #b20000;
+  width: 50em;
+  float: left;
+}
+
+#locations {
+  font-family: serif;
+  color: #b20000;
+  width: 300px;
+}
+
+#locations-header {
+  font-family: 'bungee shade';
+  color: salmon;
+  font-size: 26px;
+  text-decoration: underline;
+}
+
+#contact-info {
+  color: #b20000;
+}
