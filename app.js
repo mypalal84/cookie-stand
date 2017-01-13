@@ -4,7 +4,7 @@ var hours = ['Stores', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm'
 
 var shopNames = ['First and Pike', 'Sea Tac', 'Seattle Center', 'Cap Hill', 'Alki'];
 
-//Object constructer
+//Object constructor
 function Shop(name, min, max, average){
   this.name = name;
   this.min = min;
