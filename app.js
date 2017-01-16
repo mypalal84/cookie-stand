@@ -3,6 +3,7 @@
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 //objects
 var firstAndPike = {
+  name: firstAndPike,
   min: 23,
   max: 65,
   average: 6.3,
@@ -31,6 +32,19 @@ var firstAndPike = {
     return total;
   },
 //method for writing the javascript to the html
+  renderNames: function(){
+    var listNames = document.getElementById('cookie-sales');
+    for (var i = 0; i < firstAndPike.hourlyArray.length; i++){
+      var listNamesItem = document.createElement('li');
+      listNamesItem.textContent = name[i];
+      listNames.appendChild(listNamesItem);
+    };
+    var total = document.getElementById('cookie-sales');
+    var listNamesItem = document.createElement('li');
+    listNamesItem.textContent = firstAndPike.name.renderNames(total);
+    total.appendChild(listItem);
+  },
+
   cookieSales: function(){
     var listHours = document.getElementById('cookie-sales');
     for (var i = 0; i < firstAndPike.hourlyArray.length; i++){
@@ -52,6 +66,7 @@ firstAndPike.cookieSales();
 console.log(firstAndPike.cookiestotal);
 
 var seaTac = {
+  name: seaTac,
   min: 3,
   max: 24,
   average: 1.2,
@@ -101,6 +116,7 @@ seaTac.cookieSales();
 console.log(seaTac.cookiestotal);
 
 var seattleCenter = {
+  name: seattleCenter,
   min: 11,
   max: 38,
   average: 3.7,
@@ -150,6 +166,7 @@ seattleCenter.cookieSales();
 console.log(seattleCenter.cookiestotal);
 
 var capHill = {
+  name: capHill,
   min: 20,
   max: 38,
   average: 2.3,
@@ -199,6 +216,7 @@ capHill.cookieSales();
 console.log(capHill.cookiestotal);
 
 var alki = {
+  name: alki,
   min:  2,
   max: 16,
   average: 4.6,
