@@ -1,9 +1,9 @@
 'use strict';
 //global array
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+var names = ['First and Pike', 'Sea Tac', 'Seattle Center', 'Cap Hill', 'Alki'];
 //objects
 var firstAndPike = {
-  name: firstAndPike,
   min: 23,
   max: 65,
   average: 6.3,
@@ -23,7 +23,7 @@ var firstAndPike = {
     return this.hourlyArray;
   },
   //method for getting the total cookies
-  cookiesTotal: function() {
+  cookiesTotal: function(){
     var total = 0;
     for (var i = 0; i < this.hourlyArray.length; i++) {
       total += this.hourlyArray[i];
@@ -32,21 +32,13 @@ var firstAndPike = {
     return total;
   },
 //method for writing the javascript to the html
-  renderNames: function(){
-    var listNames = document.getElementById('cookie-sales');
-    for (var i = 0; i < firstAndPike.hourlyArray.length; i++){
-      var listNamesItem = document.createElement('li');
-      listNamesItem.textContent = name[i];
-      listNames.appendChild(listNamesItem);
-    };
-    var total = document.getElementById('cookie-sales');
-    var listNamesItem = document.createElement('li');
-    listNamesItem.textContent = firstAndPike.name.renderNames(total);
-    total.appendChild(listItem);
-  },
 
   cookieSales: function(){
     var listHours = document.getElementById('cookie-sales');
+    var liName = document.createElement('li');
+    liName.setAttribute('class', 'location-name');
+    liName.textContent = names[0];
+    listHours.appendChild(liName);
     for (var i = 0; i < firstAndPike.hourlyArray.length; i++){
       var listItem = document.createElement('li');
       listItem.textContent = hours[i] + ' Sales -' + firstAndPike.hourlyArray[i];
@@ -58,7 +50,6 @@ var firstAndPike = {
     total.appendChild(listItem);
   }
 };
-
 firstAndPike.randCustFirstAndPike();
 firstAndPike.cookieProducer();
 firstAndPike.cookiesTotal();
@@ -66,7 +57,6 @@ firstAndPike.cookieSales();
 console.log(firstAndPike.cookiestotal);
 
 var seaTac = {
-  name: seaTac,
   min: 3,
   max: 24,
   average: 1.2,
@@ -97,6 +87,10 @@ var seaTac = {
 //method for writing the javascript to the html
   cookieSales: function(){
     var listHours = document.getElementById('cookie-sales');
+    var liName = document.createElement('li');
+    liName.setAttribute('class', 'location-name');
+    liName.textContent = names[1];
+    listHours.appendChild(liName);
     for (var i = 0; i < seaTac.hourlyArray.length; i++){
       var listItem = document.createElement('li');
       listItem.textContent = hours[i] + ' Sales -' + seaTac.hourlyArray[i];
@@ -116,7 +110,6 @@ seaTac.cookieSales();
 console.log(seaTac.cookiestotal);
 
 var seattleCenter = {
-  name: seattleCenter,
   min: 11,
   max: 38,
   average: 3.7,
@@ -147,6 +140,10 @@ var seattleCenter = {
 //method for writing the javascript to the html
   cookieSales: function(){
     var listHours = document.getElementById('cookie-sales');
+    var liName = document.createElement('li');
+    liName.setAttribute('class', 'location-name');
+    liName.textContent = names[2];
+    listHours.appendChild(liName);
     for (var i = 0; i < seattleCenter.hourlyArray.length; i++){
       var listItem = document.createElement('li');
       listItem.textContent = hours[i] + ' Sales -' + seattleCenter.hourlyArray[i];
@@ -166,7 +163,6 @@ seattleCenter.cookieSales();
 console.log(seattleCenter.cookiestotal);
 
 var capHill = {
-  name: capHill,
   min: 20,
   max: 38,
   average: 2.3,
@@ -197,6 +193,10 @@ var capHill = {
 //method for writing the javascript to the html
   cookieSales: function(){
     var listHours = document.getElementById('cookie-sales');
+    var liName = document.createElement('li');
+    liName.setAttribute('class', 'location-name');
+    liName.textContent = names[3];
+    listHours.appendChild(liName);
     for (var i = 0; i < capHill.hourlyArray.length; i++){
       var listItem = document.createElement('li');
       listItem.textContent = hours[i] + ' Sales -' + capHill.hourlyArray[i];
@@ -216,7 +216,6 @@ capHill.cookieSales();
 console.log(capHill.cookiestotal);
 
 var alki = {
-  name: alki,
   min:  2,
   max: 16,
   average: 4.6,
@@ -247,6 +246,10 @@ var alki = {
 //method for writing the javascript to the html
   cookieSales: function(){
     var listHours = document.getElementById('cookie-sales');
+    var liName = document.createElement('li');
+    liName.setAttribute('class', 'location-name');
+    liName.textContent = names[4];
+    listHours.appendChild(liName);
     for (var i = 0; i < alki.hourlyArray.length; i++){
       var listItem = document.createElement('li');
       listItem.textContent = hours[i] + ' Sales -' + alki.hourlyArray[i];
